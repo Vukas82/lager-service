@@ -18,28 +18,107 @@
 
 .carousel-div {
     position: absolute;
-    right: 15px;
-    top: 50px;
+    left: 50%;
+    top: 110px;
     height: 80px;
-    width: 500px;
-    background-color: #ffffff;
+    width: 800px;
+    // background-color: #ffffff;
     padding: 20px 20px;
     opacity: 0;
     animation: innerImg 1s forwards;
     animation-delay: .8s;
+    text-align: center; // transform: translateX(-50%);
+    background-color: transparent;
+    font-weight: 900;
 
-    display: none
+    // display: none
+
 }
 
 .carousel-div h4 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
+    color: #fff;
+
+    // text-align: center
+    visibility: visible;
+    text-align: center;
+    line-height: 72px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 65px;
 }
 
 .carousel-div p {
     margin: 0;
+    color: #fff;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+// 
+
+.inner__link {
+    background-color: #fff;
+    font-family: Roboto;
+    line-height: 51px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    margin: 0px;
+    padding: 0px 39px;
+    // color: rgb(255, 255, 255);
+    color: $plavaBoja;
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    border-width: 0px;
+
+    position: absolute;
+    bottom: 15%;
+    display: block;
+    visibility: visible;
+    overflow: visible;
+
+
+    a {
+        text-decoration: none;
+        color: $plavaBoja;
+        font-size: 14px;
+
+    }
+
+}
+
+.inner__link:hover {
+    background-color: $plavaBoja;
+    color: #fff;
+
+    a {
+        background-color: $plavaBoja;
+        color: #fff;
+    }
+}
+
+.inner__link__left {
+    // left: 37%;
+    left: 400px;
+}
+
+.inner__link__right {
+    right: 37%;
 }
 
 @keyframes innerImg {
@@ -49,9 +128,9 @@
     }
 
     100% {
-        opacity: .8;
+        opacity: 1;
         /* transform: translateX(0px) scale(1); */
-        transform: translateY(0) scale(1);
+        transform: translateY(0) translateX(-50%) scale(1);
     }
 }
 
@@ -117,29 +196,53 @@
 }
 
 .carousel .carousel__nav {
-    background-color: rgba(250, 250, 250, .4);
+
+
+    // height: 4px;
+    // width: 4px;
+    /* border-radius: 12px; */
+    // background: 0 0;
+    // border: 4px solid #fff;
+    // box-sizing: content-box;
+
+
+
+    background-color: transparent;
     padding: 5px 0;
     position: absolute;
     align-self: center;
-    border-radius: 30px;
-    display: none;
+    border-radius: 50%;
+    // display: none;
 }
 
 .carousel div button {
-    border: 0;
+
+    height: 4px;
+    width: 4px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background: rgba(0, 0, 0, .3);
+    background: 0 0;
+    border: 4px solid #fff;
+    box-sizing: content-box;
+
+
+    // --------------------
+    // border: 0;
+    // border-radius: 50%;
+    // width: 15px;
+    // height: 15px;
+    // background: rgba(0, 0, 0, .3);
     margin: 0 12px;
-    padding: 5px;
+    padding: 0px;
     z-index: 1;
     cursor: pointer;
+    outline: none;
 
 }
 
 .carousel div button.current-slide {
-    background: rgba(0, 0, 0, .8);
+    // background: rgba(0, 0, 0, .8);
+    background: #fff;
+    border-color: black;
 }
 
 .is-hiden {

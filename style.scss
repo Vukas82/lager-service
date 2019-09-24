@@ -54,8 +54,17 @@ header {
             img {
                 height: 100%;
                 width: 100%;
+                transition: all .2s ease-out;
             }
 
+        }
+
+        .logo:hover {
+            img {
+                // height: 110%;
+                // width: 110%;
+                transform: scale(1.05)
+            }
         }
 
         .header__top__contact {
@@ -133,7 +142,7 @@ header {
                 width: 3px;
                 height: 50px;
                 // background-color: rgb(66, 65, 65);
-                border-right: 1px solid $sivaBoja;
+                border-right: 1px solid #9294973d;
                 margin-left: 15px;
                 // position: absolute;
                 // right: 0;
@@ -175,8 +184,10 @@ header {
                 align-items: center;
                 justify-content: space-between;
 
+
                 li {
                     display: inline-block;
+                    position: relative;
 
 
                     a {
@@ -188,6 +199,31 @@ header {
                             font-size: 14px;
                             font-weight: 700;
                             text-transform: capitalize;
+                            position: relative;
+                        }
+
+
+                        h2::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: -22px;
+                            margin: auto;
+                            background-color: #fff;
+                            opacity: 1;
+                            height: 3px;
+                            margin-top: 12px;
+                            width: 0;
+                            -khtml-transition: all .3s linear 0ms;
+                            -moz-transition: all .3s linear 0ms;
+                            -ms-transition: all .3s linear 0ms;
+                            -o-transition: all .3s linear 0ms;
+                            transition: all .3s linear 0ms;
+                        }
+
+                        h2:hover::after {
+                            width: 100%;
                         }
 
                     }
@@ -196,24 +232,10 @@ header {
         }
     }
 
-
-    // nav {
-    //     height: 100%;
-    //     width: 100%;
-    //     background: lightblue;
-
-
-    //     ul {
-
-    //         list-style: none;
-
-    //         li {
-    //             display: inline-block;
-
-    //             a {
-    //                 text-decoration: none;
-    //             }
-    //         }
-    //     }
-    // }
 }
+
+// #innerDiv1 {
+//     position: absolute;
+//     left: 0px;
+//     display: block;
+// }
