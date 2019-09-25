@@ -86,6 +86,12 @@ header {
                 align-items: center;
 
                 // border-right: 1px solid red;
+                .header__top__item__inner__lang {
+                    background-color: $plavaBoja;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
 
 
                 .header__top__item__inner {
@@ -234,8 +240,4 @@ header {
 
 }
 
-// #innerDiv1 {
-//     position: absolute;
-//     left: 0px;
-//     display: block;
-// }
+// ade

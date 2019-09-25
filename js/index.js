@@ -57,22 +57,76 @@ prevButton.addEventListener('click', e => {
     const prethodni = prevSlide.querySelector('.carousel-div')
     const trenutni = currentSlide.querySelector('.carousel-div');
 
-    removeClassHidden(prethodni)
+    const prethodniInnerLinkLeft = prevSlide.querySelector('.inner__link__left')
+    const trenutniInnerLinkLeft = currentSlide.querySelector('.inner__link__left');
+
+    const prethodniInnerLinkRight = prevSlide.querySelector('.inner__link__right')
+    const trenutniInnerLinkRight = currentSlide.querySelector('.inner__link__right');
+
     // funkcija za dodavanje klase
     function removeClassHidden(x) {
-        if (x.classList != 'is-hiden') {
-            x.classList.remove('is-hiden')
-        } else {
-            x.classList.add('is-hiden')
-        }
-    }
-    addClassHidden(trenutni)
 
-    function addClassHidden(x) {
-        x.classList.add('is-hiden')
+        // addClassHidden(x)
+        // remClassHidden(x)
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        // x.classList.toggle("is-hiden");
+        // remClassHidden(x)
+
+
+        // if (x.classList == 'is-hiden') {
+        //     console.log('pozvana za if')
+
+        //     x.classList.remove('is-hiden')
+        // } else {
+        //     // x.classList.add('is-hiden')
+        // addClassHidden(x)
+        // removeClassHidden(x)
+        // }
     }
+
+    // function removeClassHidden(x) {
+    //     console.log(x.classList)
+    //     if (x.classList !== 'is-hiden') {
+    //         x.classList.remove('is-hiden');
+    //         console.log(x.classList)
+
+    //     } else {
+    //         x.classList.remove('is-hiden')
+    //     }
+    // }
+
+    // function addClassHidden(x) {
+    //     x.classList.add('is-hiden');
+    //     console.log('pozvana za prev')
+    // }
+
+    // function remClassHidden(x) {
+    //     x.classList.remove('is-hiden');
+    //     console.log('pozvana na nex da dodeli klasu')
+    // }
+
+    removeClassHidden(trenutni)
+    removeClassHidden(trenutniInnerLinkLeft)
+    removeClassHidden(trenutniInnerLinkRight)
+    removeClassHidden(prethodni)
+
+    removeClassHidden(prethodniInnerLinkLeft)
+    removeClassHidden(prethodniInnerLinkRight)
+
+    // addClassHidden(trenutni)
+    // addClassHidden(trenutniInnerLinkLeft)
+    // addClassHidden(trenutniInnerLinkRight)
 })
 
+// function myFunction() {
+//     var element = document.getElementById("myDIV");
+//     element.classList.toggle("mystyle");
+//   }
 
 // when i click right. move to the right
 nextButton.addEventListener('click', e => {
@@ -90,20 +144,37 @@ nextButton.addEventListener('click', e => {
     const sledeci = nextSlide.querySelector('.carousel-div');
     const trenutni = currentSlide.querySelector('.carousel-div');
 
-    removeClassHidden(sledeci)
+    const sledeciInnerLink = nextSlide.querySelector('.inner__link__left');
+    const trenutniInnerLink = currentSlide.querySelector('.inner__link__left');
+
+    const sledeciInnerRight = nextSlide.querySelector('.inner__link__right');
+    const trenutniInnerRight = currentSlide.querySelector('.inner__link__right');
+
     // funkcija za dodavanje klase
     function removeClassHidden(x) {
-        if (x.classList != 'is-hiden') {
-            x.classList.remove('is-hiden')
-        } else {
-            x.classList.add('is-hiden')
-        }
-    }
-    addClassHidden(trenutni)
 
-    function addClassHidden(x) {
-        x.classList.add('is-hiden')
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
     }
+
+    removeClassHidden(trenutni)
+
+    removeClassHidden(trenutniInnerRight)
+    removeClassHidden(trenutniInnerLink)
+
+    removeClassHidden(sledeci)
+
+    removeClassHidden(sledeciInnerLink)
+    removeClassHidden(sledeciInnerRight)
+
+    // addClassHidden(trenutni)
+    // addClassHidden(trenutniInnerLink)
+    // addClassHidden(trenutniInnerRight)
+
 })
 
 

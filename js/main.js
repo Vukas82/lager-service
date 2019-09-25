@@ -226,6 +226,7 @@ nextButton.addEventListener('click', e => {
     const sledeci = nextSlide.querySelector('.carousel-div');
     const trenutni = currentSlide.querySelector('.carousel-div');
 
+
     removeClassHidden(sledeci)
     // funkcija za dodavanje klase
     function removeClassHidden(x) {
@@ -240,6 +241,39 @@ nextButton.addEventListener('click', e => {
     function addClassHidden(x) {
         x.classList.add('is-hiden')
     }
+
+    // original kod =----------------------------------
+    // removeClassHidden(sledeci)
+    // // funkcija za dodavanje klase
+    // function removeClassHidden(x) {
+    //     if (x.classList != 'is-hiden') {
+    //         x.classList.remove('is-hiden')
+    //     } else {
+    //         x.classList.add('is-hiden')
+    //     }
+    // }
+    // addClassHidden(trenutni)
+
+    // function addClassHidden(x) {
+    //     x.classList.add('is-hiden')
+    // }
+    // ---------------------------------------------------
+    // liknovi unutrsnanji
+
+    // removeClassHidden(sledeciInnerLink)
+    // // funkcija za dodavanje klase
+    // function removeClassHidden(x) {
+    //     if (x.classList != 'is-hiden') {
+    //         x.classList.remove('is-hiden')
+    //     } else {
+    //         x.classList.add('is-hiden')
+    //     }
+    // }
+    // addClassHidden(trenutniInnerLink)
+
+    // function addClassHidden(x) {
+    //     x.classList.add('is-hiden')
+    // }
 })
 
 
