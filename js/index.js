@@ -66,67 +66,21 @@ prevButton.addEventListener('click', e => {
     // funkcija za dodavanje klase
     function removeClassHidden(x) {
 
-        // addClassHidden(x)
-        // remClassHidden(x)
-
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
             x.style.display = "none";
         }
-        // x.classList.toggle("is-hiden");
-        // remClassHidden(x)
 
-
-        // if (x.classList == 'is-hiden') {
-        //     console.log('pozvana za if')
-
-        //     x.classList.remove('is-hiden')
-        // } else {
-        //     // x.classList.add('is-hiden')
-        // addClassHidden(x)
-        // removeClassHidden(x)
-        // }
     }
-
-    // function removeClassHidden(x) {
-    //     console.log(x.classList)
-    //     if (x.classList !== 'is-hiden') {
-    //         x.classList.remove('is-hiden');
-    //         console.log(x.classList)
-
-    //     } else {
-    //         x.classList.remove('is-hiden')
-    //     }
-    // }
-
-    // function addClassHidden(x) {
-    //     x.classList.add('is-hiden');
-    //     console.log('pozvana za prev')
-    // }
-
-    // function remClassHidden(x) {
-    //     x.classList.remove('is-hiden');
-    //     console.log('pozvana na nex da dodeli klasu')
-    // }
 
     removeClassHidden(trenutni)
     removeClassHidden(trenutniInnerLinkLeft)
     removeClassHidden(trenutniInnerLinkRight)
     removeClassHidden(prethodni)
-
     removeClassHidden(prethodniInnerLinkLeft)
     removeClassHidden(prethodniInnerLinkRight)
-
-    // addClassHidden(trenutni)
-    // addClassHidden(trenutniInnerLinkLeft)
-    // addClassHidden(trenutniInnerLinkRight)
 })
-
-// function myFunction() {
-//     var element = document.getElementById("myDIV");
-//     element.classList.toggle("mystyle");
-//   }
 
 // when i click right. move to the right
 nextButton.addEventListener('click', e => {
@@ -162,18 +116,11 @@ nextButton.addEventListener('click', e => {
     }
 
     removeClassHidden(trenutni)
-
     removeClassHidden(trenutniInnerRight)
     removeClassHidden(trenutniInnerLink)
-
     removeClassHidden(sledeci)
-
     removeClassHidden(sledeciInnerLink)
     removeClassHidden(sledeciInnerRight)
-
-    // addClassHidden(trenutni)
-    // addClassHidden(trenutniInnerLink)
-    // addClassHidden(trenutniInnerRight)
 
 })
 
@@ -198,49 +145,80 @@ dotsNav.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
 
     // setup for inner div
+    // setup za unutrasnje divove
 
-    // treba napraviti logiku da na osnovu index dodajer ili oduzima klasu hidden  
-    //  recimo ako je veci od trenutnog njemu ukloniti klasu hidden a trenutnom je dodeliti
-    //  i ako je index manji od ttenutnog isto tako njemu oduzeti a trenutnom dodati klasu hidden
 
-    // console.log(targetIndex)
-    // const thisIndex = dots.findIndex(dot => dot === currentDot);
-    // console.log(thisIndex + "trenutni")
 
-    // const nextSlide = currentSlide.nextElementSibling;
-    // const prevSlide = currentSlide.previousElementSibling;
 
-    // const sledeci = nextSlide.querySelector('.carousel-div');
+    // const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const nextSlide = currentSlide.nextElementSibling;
+
+    // console.log(prevSlide)
+    // console.log(nextSlide)
+
+    // const prethodni = prevSlide.querySelector('.carousel-div') bug
+    const trenutni = currentSlide.querySelector('.carousel-div');
+    const sledeci = nextSlide.querySelector('.carousel-div');
+    console.log(targetIndex)
+
+    const prethodniInnerLinkLeft = prevSlide.querySelector('.inner__link__left')
+    const trenutniInnerLinkLeft = currentSlide.querySelector('.inner__link__left');
+
+    const prethodniInnerLinkRight = prevSlide.querySelector('.inner__link__right')
+    const trenutniInnerLinkRight = currentSlide.querySelector('.inner__link__right');
+
+    // const sledeci = nextSlide.querySelector('.carousel-div'); bug
     // const trenutni = currentSlide.querySelector('.carousel-div');
-    // const prethodni = prevSlide.querySelector('.carousel-div')
 
+    const sledeciInnerLink = nextSlide.querySelector('.inner__link__left');
+    const trenutniInnerLink = currentSlide.querySelector('.inner__link__left');
 
-    // removeClassHidden(sledeci)
-    // funkcija za dodavanje klase
-    // function removeClassHidden(x) {
-    //     if (x.classList != 'is-hiden') {
-    //         x.classList.remove('is-hiden')
+    const sledeciInnerRight = nextSlide.querySelector('.inner__link__right');
+    const trenutniInnerRight = currentSlide.querySelector('.inner__link__right');
+
+    const hideShowDivsNext = (x) => {
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            // y.style.display = "none";
+            // z.style.display = "none";
+            console.log('iz if')
+        } else {
+            x.style.display = "block";
+            // y.style.display = "block";
+            // y.style.display = "block";
+            console.log('iz else')
+
+        }
+    }
+    // const hideShowDivsPrev = (x, y) => {
+    //     if (x.style.display === "none") {
+    //         x.style.display = "block";
+    //         y.style.display = "none";
     //     } else {
-    //         x.classList.add('is-hiden')
+    //         x.style.display = "none";
+    //         y.style.display = "block";
     //     }
     // }
-    // addClassHidden(thisIndex)
 
-    //  levo
-    // removeClassHidden(prethodni)
-    // funkcija za dodavanje klase
-    // function removeClassHidden(x) {
-    //     if (x.classList != 'is-hiden') {
-    //         x.classList.remove('is-hiden')
-    //     } else {
-    //         x.classList.add('is-hiden')
-    //     }
-    // }
 
-    // function addClassHidden(x) {
-    //     x.classList.add('is-hiden')
-    // }
+    // hideShowDivs(slides, sledeci, targetIndex)
+    // hideShowDivs(trenutniInnerLinkLeft)
+    hideShowDivsNext(trenutniInnerLinkLeft)
+    hideShowDivsNext(trenutniInnerLinkRight)
+    hideShowDivsNext(trenutni)
+
+    hideShowDivsNext(sledeciInnerLink)
+    hideShowDivsNext(sledeciInnerRight)
+    hideShowDivsNext(sledeci)
+    // hideShowDivsPrev(sledeciInnerRight, prethodniInnerLinkLeft)
+    // hideShowDivs(trenutniInnerLink, prethodniInnerLinkLeft)
+
+
+
+
 })
+
 
 
 // end of carousel

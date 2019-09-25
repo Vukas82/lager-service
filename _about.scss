@@ -1,0 +1,87 @@
+.about {
+
+    // background-color: red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .about__text {
+        // display: grid;
+        // grid-area: grid__text;
+        // background-color: red;
+        text-align: center;
+    }
+
+    .projects {
+        // grid-area: projects;
+        // background-color: green;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'projects__header projects__header projects__header'
+            'project__1 project__2 project__3';
+
+        // gap: 20px;
+        p {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .projects__header {
+            grid-area: projects__header;
+            text-align: center;
+        }
+
+        .project__1 {
+            grid-area: project__1;
+            padding: 30px;
+        }
+
+        .project__2 {
+            grid-area: project__2;
+            padding: 30px;
+
+        }
+
+        .project__3 {
+            grid-area: project__3;
+            padding: 30px;
+
+        }
+
+        // body>section.about.container>div.jobOffer>div.servis>img {
+        //     width: 100px;
+        //     height: 100px;
+        // }
+
+        .jobOffer {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: red !important;
+            //         .servis {
+            //             img {
+            //                 width: 100px;
+            //                 height: 100px;
+            //             }
+            //         }
+
+            //         .montaza {
+            //             img {
+            //                 width: 100px;
+            //                 height: 100px;
+            //             }
+            //         }
+
+            //         .demontaza {
+            //             img {
+            //                 width: 100px;
+            //                 height: 100px;
+            //             }
+            //         }
+        }
+
+    }
+}
