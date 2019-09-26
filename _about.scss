@@ -49,6 +49,7 @@
         }
 
         .projects__header {
+            // position: relative;
             grid-area: projects__header;
             text-align: center;
 
@@ -86,11 +87,13 @@
         .project__1 {
             grid-area: project__1;
             width: 100%;
-            box-sizing: border-box;
+            // position: relative;
+
 
             h4 {
                 margin: 10px 0px 10px 0px;
                 // font-size: 24px;
+
             }
 
         }
@@ -98,10 +101,12 @@
         .project__2 {
             grid-area: project__2;
             width: 100%;
+            // position: relative;
 
             h4 {
                 margin: 10px 0px 10px 0px;
                 // font-size: 24px;
+
             }
 
         }
@@ -109,17 +114,21 @@
         .project__3 {
             grid-area: project__3;
             width: 100%;
+            // position: relative;
 
             // box-sizing: border-box;
             h4 {
                 margin: 10px 0px 10px 0px;
                 // font-size: 24px;
+
             }
+
 
         }
 
 
     }
+
 
     .btn__arrow {
         text-decoration: none;

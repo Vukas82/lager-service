@@ -264,3 +264,29 @@ function toggle2(id, id2, x) {
     }
 
 }
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function () {
+    stickyHeader()
+};
+
+// Get the header
+var header = document.getElementById("myHeader");
+var slider = document.querySelector(".slider");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop + 500;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyHeader() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        slider.style.marginTop = '60px';
+    } else {
+        header.classList.remove("sticky");
+        slider.style.marginTop = '0px';
+
+    }
+}
+
+//-----------------------------------------

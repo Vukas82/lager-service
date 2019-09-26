@@ -16,19 +16,30 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 60px;
+
 
     h4 {
         text-align: right;
     }
+
+
 }
+
+.about__text {
+    p {
+        text-align: justify;
+
+    }
+}
+
+
 
 .horizontal__line {
     display: inline-block;
-    width: 50%;
+    width: 80%;
     height: 3px;
     background-color: $plavaBoja;
     display: flex;
     align-self: flex-end;
-
-
 }
