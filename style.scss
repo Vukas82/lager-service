@@ -15,10 +15,25 @@ $sivaBoja: #929497;
 @import "carousel";
 @import "slider";
 @import "about";
+@import "usluge";
+@import "footer";
 
 body {
     font-family: 'Roboto', sans-serif;
     color: $sivaBoja;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: $plavaBoja;
+    clear: both;
+    line-height: 1.2;
+    font-weight: 500;
+
 }
 
 .container {

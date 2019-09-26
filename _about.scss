@@ -1,4 +1,16 @@
 .about {
+    h3 {
+        margin: 60px 60px;
+        font-size: 34px;
+    }
+
+    h4 {
+        margin: 60px 0px 10px 0px;
+        font-size: 24px;
+    }
+
+
+    box-sizing: border-box;
 
     // background-color: red;
     margin: auto;
@@ -21,7 +33,16 @@
         grid-template-areas: 'projects__header projects__header projects__header'
             'project__1 project__2 project__3';
 
-        // gap: 20px;
+        gap: 20px;
+        box-sizing: border-box;
+
+
+        .color {
+            color: $plavaBoja;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
         p {
             display: inline-block;
             margin-right: 30px;
@@ -30,58 +51,122 @@
         .projects__header {
             grid-area: projects__header;
             text-align: center;
+
+            p {
+                margin: 0px 0px 60px 0px;
+            }
+        }
+
+        .img {
+
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img__efect {
+
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+
+        }
+
+        img {
+            transition: all 1s ease-in-out;
+
+        }
+
+        img:hover {
+            transform: scale(1.2);
+
         }
 
         .project__1 {
             grid-area: project__1;
-            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+
+            h4 {
+                margin: 10px 0px 10px 0px;
+                // font-size: 24px;
+            }
+
         }
 
         .project__2 {
             grid-area: project__2;
-            padding: 30px;
+            width: 100%;
+
+            h4 {
+                margin: 10px 0px 10px 0px;
+                // font-size: 24px;
+            }
 
         }
 
         .project__3 {
             grid-area: project__3;
-            padding: 30px;
+            width: 100%;
+
+            // box-sizing: border-box;
+            h4 {
+                margin: 10px 0px 10px 0px;
+                // font-size: 24px;
+            }
 
         }
 
-        // body>section.about.container>div.jobOffer>div.servis>img {
-        //     width: 100px;
-        //     height: 100px;
-        // }
 
-        .jobOffer {
+    }
 
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            background-color: red !important;
-            //         .servis {
-            //             img {
-            //                 width: 100px;
-            //                 height: 100px;
-            //             }
-            //         }
+    .btn__arrow {
+        text-decoration: none;
+        color: $plavaBoja;
+        font-size: 17px;
+        font-weight: 700;
+    }
 
-            //         .montaza {
-            //             img {
-            //                 width: 100px;
-            //                 height: 100px;
-            //             }
-            //         }
+    .btn__arrow:hover {
+        color: $sivaBoja;
+    }
 
-            //         .demontaza {
-            //             img {
-            //                 width: 100px;
-            //                 height: 100px;
-            //             }
-            //         }
-        }
+    .btn__arrow:after {
+        // content: url('images/right-arrow-link.svg');
+        content: '';
+        background-image: url(/images/right-arrow-link.svg);
+        height: 10px;
+        width: 15px;
+        background-position: center;
+        background-size: cover;
+        // background-image: url('images/right-arrow-link.svg');
+        // font-family: "Font Awesome 5 Pro";
+        margin-left: 7px;
+        font-size: 13px;
+        opacity: 0;
+        display: inline-block;
+        -webkit-transform: translateX(-15px);
+        -khtml-transform: translateX(-15px);
+        -moz-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+        transform: translateX(-15px);
+        -webkit-transition: all .3s linear 0ms;
+        -khtml-transition: all .3s linear 0ms;
+        -moz-transition: all .3s linear 0ms;
+        -ms-transition: all .3s linear 0ms;
+        -o-transition: all .3s linear 0ms;
+        transition: all .3s linear 0ms;
+    }
 
+    .btn__arrow:hover:after {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -khtml-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
     }
 }

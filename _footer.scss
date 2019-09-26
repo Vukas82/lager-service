@@ -1,0 +1,86 @@
+footer {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    background: $plavaBoja;
+
+    .footer__wraper {
+        // background: green;
+
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .footer__wraper__left {
+            // background-color: red;
+            height: 100%;
+            width: 55%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+
+            .company__name {
+                font-size: 16px;
+            }
+
+            span {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+
+                }
+
+            }
+
+            h6 {
+                color: #fff;
+                // font-size: 15px;
+            }
+        }
+
+
+
+        .footer__wraper__right {
+            // background-color: blue;
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+
+            span {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(1);
+                }
+
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+
+
+
+    }
+}

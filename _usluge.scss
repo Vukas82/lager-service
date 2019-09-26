@@ -1,0 +1,92 @@
+.usluge {
+
+    padding-top: 60px;
+
+    .svg__container {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+
+    .mySvg {
+        width: 100%;
+        height: 100%;
+
+        fill: $plavaBoja;
+        fill-opacity: 1;
+
+        transition: all .3s ease-in-out;
+
+    }
+
+
+
+    .jobOffer {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            .mySvg {
+                fill: $sivaBoja;
+                transform: scale(1.07);
+
+            }
+        }
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+
+        }
+
+        a:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        h5 {
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 0px;
+            color: $plavaBoja;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+        // background-color: red !important;
+
+        //         .montaza {
+        //             img {
+        //                 width: 100px;
+        //                 height: 100px;
+        //             }
+        //         }
+
+        //         .demontaza {
+        //             img {
+        //                 width: 100px;
+        //                 height: 100px;
+        //             }
+        //         }
+    }
+}
