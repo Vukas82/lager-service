@@ -54,3 +54,9 @@ header .header__top .header__top__contact .header__top__item {
     margin: auto;
 
 }
+
+body>section.about.container>div.about__text>p {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
