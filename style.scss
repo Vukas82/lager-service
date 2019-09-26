@@ -154,10 +154,12 @@ header {
                     }
                 }
 
-                .header__top__item__inner__lang a:nth-child(2) {
+                .lang {
+                    transition: all .2s ease;
+                }
 
-                    // background-color: $plavaBoja;
-                    // border: 1px solid $plavaBoja;
+                .lang:hover {
+                    transform: scale(1.2);
                 }
 
             }
