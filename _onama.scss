@@ -1,0 +1,34 @@
+.viewport {
+    width: 100%;
+    height: 540px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.onama {
+    // display: inline-block
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    h4 {
+        text-align: right;
+    }
+}
+
+.horizontal__line {
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    background-color: $plavaBoja;
+    display: flex;
+    align-self: flex-end;
+
+
+}
