@@ -19,7 +19,6 @@ $sivaBoja: #929497;
 @import "about";
 @import "usluge";
 @import "footer";
-@import "responsive";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -42,6 +41,7 @@ h6 {
 .container {
     width: 1110px;
 }
+
 
 .sticky {
     position: fixed;
@@ -269,3 +269,4 @@ header {
 }
 
 // ade
+@import "responsive";
