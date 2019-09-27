@@ -103,12 +103,14 @@
     header {
         .header__top {
             .header__top__contact {
-                .header__top__item:nth-child(1) {
+                .header__top__item:nth-child(3) {
                     display: none;
                 }
             }
         }
     }
+
+    // body > header > div.container.header__top > div.header__top__contact > div:nth-child(3)
 
     .inner__link__left {
         left: 27%;
@@ -165,6 +167,14 @@
             float: right;
         }
 
+    }
+
+    .onama {
+        flex-direction: column;
+
+        .horizontal__line {
+            width: 100%;
+        }
     }
 
     .usluge {
