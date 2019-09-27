@@ -108,12 +108,12 @@
 // }
 
 .inner__link__left:hover {
-    background-color: $plavaBoja;
-    color: #fff;
+    background-color: #fff;
+    color: $plavaBoja;
 
     a {
-        background-color: $plavaBoja;
-        color: #fff;
+        background-color: #fff;
+        color: $plavaBoja;
     }
 }
 
@@ -133,7 +133,7 @@
     // left: 400px;
     animation: innerLinkLeft 1s forwards;
 
-    background-color: #fff;
+    background-color: $plavaBoja;
     font-family: Roboto;
     line-height: 51px;
     letter-spacing: 0px;
@@ -166,7 +166,7 @@
 
     a {
         text-decoration: none;
-        color: $plavaBoja;
+        color: #fff;
         font-size: 14px;
 
     }
