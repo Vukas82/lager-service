@@ -167,10 +167,55 @@
 
     }
 
+    .usluge {
+        .jobOffer {
+            flex-direction: column;
+        }
+
+        .jobOffer {
+            .servis {
+                margin-bottom: 50px;
+            }
+        }
+
+        .jobOffer {
+            .montaza {
+                margin-bottom: 50px;
+            }
+        }
+
+        .jobOffer {
+            .demontaza {
+                margin-bottom: 50px;
+            }
+        }
+
+        .svg__container {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    footer {
+        height: 120px;
+
+        .footer__wraper {
+            flex-direction: column;
+
+            .footer__wraper__left {
+                h6 {
+                    font-weight: 100;
+                }
+            }
+
+            .footer__wraper__right a {
+                font-weight: list-separator(#list);
+            }
+        }
+    }
 
 
 }
-
 
 
 
