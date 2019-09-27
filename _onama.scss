@@ -26,9 +26,22 @@
 
 }
 
+.projects {
+
+    .project__1,
+    .project__2,
+    .project__3 {
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
 .about__text {
     p {
         text-align: justify;
+        line-height: 1.5;
 
     }
 }

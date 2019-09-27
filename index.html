@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
 
         <div class="container header__top ">
 
@@ -78,13 +78,16 @@
 
         <div id="myHeader" class="header__bottom">
             <nav class="container">
-                <ul>
+                <ul class="navbar">
                     <li><a href="onama.html">
                             <h2>naslovna</h2>
                         </a></li>
                     <li><a href="#">
                             <h2>reference</h2>
                         </a></li>
+                    <!-- <li><a href="#">
+                            <h2>reference</h2>
+                        </a></li> -->
                     <li><a href="#">
                             <h2>zastupništva</h2>
                         </a></li>
@@ -93,12 +96,67 @@
                         </a></li>
 
                 </ul>
+
+                <div class="small-drop-btn" aria-expanded="false" id="btn" onclick="toggle('navbar', 'btn')">
+                    <a href="#header">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                </div>
+
             </nav>
 
             <!-- <nav class="search"></nav> -->
         </div>
 
     </header>
+    <!-- nav menu za small screen -->
+    <nav id="nav-small" class="navbar2 nav-small" style="">
+        <!-- <div class="logo">
+                <img src="/images/logo.svg" alt="logo">
+            </div> -->
+
+
+        <ul id="navbar" class="navbar-list-expanded" style="display: none">
+
+            <li>
+                <a href="/index.html">
+                    <h2>naslovna</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>reference</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>zastupništva</h2>
+                </a>
+            </li>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>kontakt</h2>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#">
+                    <h2>en</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>sr</h2>
+                </a>
+            </li> -->
+
+        </ul>
+    </nav>
+    <!-- ==========================end small nav -->
+
+
     <!-- S L I D E R -->
 
     <section class="slider">

@@ -246,24 +246,24 @@ function toggle(id, id2) {
 // ----------------------------------------------------------
 // toggle map location
 
-function toggle2(id, id2, x) {
+// function toggle2(id, id2, x) {
 
-    let n = document.getElementById(id);
-    let ico = document.getElementById(x);
-    // let ico = document.getElementById(x)
-    if (n.style.display != 'none') {
-        n.style.display = 'none';
-        document.getElementById(id2).setAttribute('aria-expanded', 'true');
-        ico.classList.remove('uspravno');
-        ico.classList.add('vodoravno');
-    } else {
-        n.style.display = '';
-        document.getElementById(id2).setAttribute('aria-expanded', 'false');
-        ico.classList.remove('vodoravno');
-        ico.classList.add('uspravno');
-    }
+//     let n = document.getElementById(id);
+//     let ico = document.getElementById(x);
+//     // let ico = document.getElementById(x)
+//     if (n.style.display != 'none') {
+//         n.style.display = 'none';
+//         document.getElementById(id2).setAttribute('aria-expanded', 'true');
+//         ico.classList.remove('uspravno');
+//         ico.classList.add('vodoravno');
+//     } else {
+//         n.style.display = '';
+//         document.getElementById(id2).setAttribute('aria-expanded', 'false');
+//         ico.classList.remove('vodoravno');
+//         ico.classList.add('uspravno');
+//     }
 
-}
+// }
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function () {
@@ -291,3 +291,24 @@ function stickyHeader() {
 }
 
 //-----------------------------------------
+// navabar
+function toggle(id, id2) {
+    // console.log(btn.classList.value)
+
+    if (btn.classList.value === "small-drop-btn") {
+        btn.classList.add('is-active');
+    } else {
+        btn.classList.remove('is-active');
+    }
+
+    let n = document.getElementById(id);
+    if (n.style.display != 'none') {
+        n.style.display = 'none';
+        document.getElementById(id2).setAttribute('aria-expanded', 'true');
+    } else {
+        n.style.display = '';
+        document.getElementById(id2).setAttribute('aria-expanded', 'false');
+    }
+}
+
+// ----------------------------------------------

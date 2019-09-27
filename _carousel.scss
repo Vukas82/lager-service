@@ -128,7 +128,8 @@
 }
 
 .inner__link__left {
-    left: 37%;
+    left: 38%;
+    // transform: translateX(-100px);
     // left: 400px;
     animation: innerLinkLeft 1s forwards;
 
@@ -156,6 +157,7 @@
     border-width: 0px;
 
     position: absolute;
+    // width: 130px;
     bottom: 15%;
     display: block;
     visibility: visible;
@@ -171,7 +173,7 @@
 }
 
 .inner__link__right {
-    right: 37%;
+    right: 40%;
     animation: innerLinkRight 1s forwards;
 
     background-color: #fff;
