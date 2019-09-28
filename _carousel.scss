@@ -128,8 +128,9 @@
 }
 
 .inner__link__left {
-    left: 38%;
-    // transform: translateX(-100px);
+    // left: 38%;
+    left: 50%;
+    // transform: translateX(200px) !important;
     // left: 400px;
     animation: innerLinkLeft 1s forwards;
 
@@ -173,7 +174,7 @@
 }
 
 .inner__link__right {
-    right: 40%;
+    right: 50%;
     animation: innerLinkRight 1s forwards;
 
     background-color: #fff;
@@ -229,7 +230,7 @@
     100% {
         // opacity: 1;
         /* transform: translateX(0px) scale(1); */
-        transform: translateX(0) scale(1);
+        transform: translateX(-150px) scale(1);
     }
 }
 
@@ -247,7 +248,7 @@
     100% {
         // opacity: 1;
         /* transform: translateX(0px) scale(1); */
-        transform: translateX(0) scale(1);
+        transform: translateX(150px) scale(1);
     }
 }
 
