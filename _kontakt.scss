@@ -226,7 +226,14 @@
 @media(max-width: 989px) {
 
     .contact__form {
+        .contact__inner {
+            padding-right: 30px !important;
+
+        }
+
         .contact {
+
+
             .contact__right {
                 width: 65%;
 
