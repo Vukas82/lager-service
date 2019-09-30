@@ -208,6 +208,30 @@
                 background-color: $plavaBoja;
                 border-color: $plavaBoja;
             }
+
+            .email-invalid {
+                color: red;
+                font-size: 12px;
+            }
+
+            .wrong {
+                color: red;
+            }
+
+            .pure-form fieldset {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                width: 50%;
+            }
+
+            #email {
+                width: 100%
+            }
+
+            .thankyou_message h2 {
+                text-align: center;
+            }
         }
     }
 }

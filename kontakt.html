@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lager service kontakt</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="pure.css">
+
     <link rel="stylesheet" href="./css/style.min.css">
+
 </head>
 
 
@@ -221,14 +224,17 @@
                 </div>
             </div>
             <div class="contact__right">
-                <form>
+
+
+                <!-- <form action="https://script.google.com/macros/s/AKfycbxwZPMonmfAAoHXNfpf4aBx7yByAsPtlyp2R7ISsQ/exec"
+                    autocomplete="on" method="POST">
                     <div class="half">
 
                         <input type="text" name="name" placeholder="Ime">
 
 
 
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off">
 
                     </div>
 
@@ -237,9 +243,72 @@
                         <textarea name="message" rows="15" placeholder="Poruka"></textarea>
                     </p>
                     <p class="full">
-                        <button>Pošalji</button>
+                        <button type="submit">Pošalji</button>
                     </p>
+                </form> -->
+
+                <!-- ==================================================================================== -->
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+                    action="https://script.google.com/macros/s/AKfycbxwZPMonmfAAoHXNfpf4aBx7yByAsPtlyp2R7ISsQ/exec">
+                    <!-- change the form action to your script url -->
+
+                    <div class="form-elements">
+                        <div class="half">
+                            <!-- <fieldset class="pure-group"> -->
+                            <!-- <label for="name">Name: </label> -->
+                            <!--  type="text" name="name" placeholder="Ime" -->
+                            <input type="text" id="name" name="name" placeholder="Ime" />
+                            <!-- </fieldset> -->
+
+                            <fieldset class="pure-group">
+                                <!-- <label for="email"><em>Your</em> Email Address:</label> -->
+
+                                <!-- <input type="email" name="email" placeholder="Email" autocomplete="off">  -->
+                                <input id="email" name="email" type="email" placeholder="Email" autocomplete="off"
+                                    value="" required placeholder="your.name@email.com" />
+                                <p class="email-invalid" style="display:none">
+                                    Email adresa mora biti validna</p>
+                            </fieldset>
+                        </div>
+                    </div>
+
+
+                    <!-- <fieldset class="pure-group"> -->
+                    <!-- <label for="message">Message: </label> -->
+
+                    <!-- <input type="email" name="email" placeholder="Email" autocomplete="off"> -->
+                    <!-- <textarea id="message" name="message" rows="10" -->
+                    <!-- placeholder="Tell us what's on your mind..."></textarea> -->
+                    <p class="full">
+
+                        <textarea id="message" name="message" rows="15" placeholder="Poruka"></textarea>
+                    </p>
+                    <!-- </fieldset> -->
+
+
+
+
+
+                    <button>Send</button>
+                    <!-- </div> -->
+
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <div class="thankyou_message" style="display:none;">
+                        <h2><em>Hvala</em> na poslatoj poruci!
+                            Odgovorićemo Vam uskoro!</h2>
+                    </div>
+
+                    <input class="agreemment" type="checkbox" name="" value="quwry" checked>
+                    <span class="contact__p wrongForm"> <small> Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Adipisci, laboriosam?</small></span><br><br>
                 </form>
+
+
+
+                <!-- END -->
+
+                <!-- ==================================================================================== -->
+
             </div>
         </div>
     </section>
@@ -288,7 +357,8 @@
 
                 </span>
 
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ofce@lager-service.eu">ofce@lager-service.eu</a>
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ofice@lager-service.eu">ofice@lager-service.eu</a>
 
             </div>
 
@@ -366,7 +436,8 @@
 
     </footer>
 
-    <!-- <script src="js/main.js"></script> -->
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
 
     <script>
         window.onscroll = function () {
