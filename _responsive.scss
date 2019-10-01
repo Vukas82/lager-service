@@ -16,7 +16,7 @@
             padding-right: 10px;
 
             .logo {
-                width: 18%;
+                width: 28%;
             }
         }
 
@@ -127,6 +127,12 @@
 
     header {
         .header__top {
+            .logo {
+
+                width: 40%;
+
+            }
+
             .header__top__contact {
                 .header__top__item:nth-child(3) {
                     display: none;
