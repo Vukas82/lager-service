@@ -323,7 +323,7 @@
 
 .carousel__button--right {
     // right: 10px;
-    right: 10%;
+    right: calc(10% - 70px);
     animation: innerImg 1s forwards;
 }
 
