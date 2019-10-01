@@ -1,4 +1,5 @@
 .about {
+
     h3 {
         margin: 60px 60px;
         font-size: 48px;
@@ -88,6 +89,7 @@
         .project__1 {
             grid-area: project__1;
             width: 100%;
+            height: 250px;
             // position: relative;
 
 
@@ -102,6 +104,8 @@
         .project__2 {
             grid-area: project__2;
             width: 100%;
+            height: 250px;
+
             // position: relative;
 
             h4 {
@@ -115,6 +119,7 @@
         .project__3 {
             grid-area: project__3;
             width: 100%;
+            height: 250px;
             // position: relative;
 
             // box-sizing: border-box;
